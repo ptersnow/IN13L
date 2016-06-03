@@ -7,13 +7,13 @@ public class CalculaMinMax {
     int[] vet;
     int min, max;
     
-    Scanner leitor  new Scanner(System.in);
+    Scanner leitor = new Scanner(System.in);
     
     vet = new int[10];
     
     for (i = 0; i < vet.length; i++) {
       System.out.print("Informe a posicao " + (i + 1) + ": ");
-      vet[i] = leitor.netxInt();
+      vet[i] = leitor.nextInt();
     }
     
     min = max = vet[0];

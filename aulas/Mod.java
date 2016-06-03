@@ -5,13 +5,13 @@ public class Mod {
   public static void main(String[] args) {
     int i;
     int aux, div;
-    Scanner leitor  new Scanner(System.in);
+    Scanner leitor = new Scanner(System.in);
     
     do {
       System.out.print("Informe o dividendo (0 para sair): ");
-      aux = leitor.netxInt();
+      aux = leitor.nextInt();
       System.out.print("Informe o divisor: ");
-      div = leitor.netxInt();
+      div = leitor.nextInt();
       
       if (aux != 0) {
         if (aux mod div == 0) {

@@ -6,13 +6,13 @@ public class VetorExemplo {
     int i;
     int[] vet;
     
-    Scanner leitor  new Scanner(System.in);
+    Scanner leitor = new Scanner(System.in);
     
     vet = new int[10];
     
     for (i = 0; i < vet.length; i++) {
       System.out.print("Informe a posicao " + (i + 1) + ": ");
-      vet[i] = leitor.netxInt();
+      vet[i] = leitor.nextInt();
     }
     
     System.out.println("Valores inseridos: ");
