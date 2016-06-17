@@ -3,13 +3,16 @@ import java.util.Scanner;
 public class CalculaMinMax {
   
   public static void main(String[] args) {
-    int i;
+    int i, n;
     int[] vet;
     int min, max;
     
-    Scanner leitor  new Scanner(System.in);
+    Scanner leitor = new Scanner(System.in);
     
-    vet = new int[10];
+    System.out.print("Informe o tamanho do vetor: ");
+    n = leitor.nextInt();
+
+    vet = new int[n];
     
     for (i = 0; i < vet.length; i++) {
       System.out.print("Informe a posicao " + (i + 1) + ": ");
@@ -30,7 +33,7 @@ public class CalculaMinMax {
       }
     }
     
-    System.out.println("Máximo: " + max);
-    System.out.println("Mínimo: " + min);
+    System.out.println("MÃ¡ximo: " + max);
+    System.out.println("MÃ­nimo: " + min);
   }  
 }
