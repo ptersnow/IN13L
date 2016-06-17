@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CalculaMinMax {
+public class CalculoMinimo {
 
   public static void main(String[] args) {
     int n;
@@ -12,10 +12,12 @@ public class CalculaMinMax {
     n = leitor.nextInt();
 
     vet = new int[n];
-    minMax(vet);
+    int min = minimo(vet);
+
+    System.out.println("Mínimo: " + min);
   }
 
-  public static int minMax (int[] vetor) {
+  public static int minimo (int[] vetor) {
 
     int i, min, max;
     Scanner leitor = new Scanner(System.in);
@@ -37,9 +39,7 @@ public class CalculaMinMax {
       }
     }
 
-    System.out.println();
-    System.out.println("min: " + min);
-    System.out.println("max: " + max);
+    return min;
   }
 
 }
