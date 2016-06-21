@@ -1,19 +1,25 @@
 import java.util.Scanner;
 
 public class Ex07 {
-  
   public static void main(String[] args) {
-    int i, n;
-    int fat = 1;
+
+    long fat;
+    int i, n, t;
     Scanner leitor = new Scanner(System.in);
     
-    System.out.println("Informe o valor a ser calculado: ");
-    n = leitor.nextInt();
-    
-    for (i = 1; i <= n; i++) {
-      fat *= i;
-    }
+    System.out.print("Informe o numero de casos de teste: ");
+    t = leitor.nextInt();
 
-    System.out.println(n + "! = " + fat);
-  }  
+    while(t-- > 0) {
+      System.out.print("Informe o valor a ser calculado: ");
+      n = leitor.nextInt();
+      
+      fat = 1;
+      for (i = 1; i <= n; i++) {
+        fat *= i;
+      }
+
+      System.out.println(n + "! = " + fat);
+    }
+  }
 }

@@ -1,34 +1,30 @@
 import java.util.Scanner;
 
-public class Ex02 {
-	public static void main(String[] args) {
-		
-		double n1, n2, n3, n4, media;
-		Scanner leitor = new Scanner(System.in);
+public class Ex01 {
+  public static void main(String[] args) {
+    
+    double imc, peso, altura;
+    Scanner leitor = new Scanner(System.in);
 
-		System.out.print("Informe a primeira nota: ");
-		n1 = leitor.nextDouble();
-		System.out.println();
+    System.out.print("Informe o peso: ");
+    peso = leitor.nextDouble();
+    System.out.println();
 
-		System.out.print("Informe a segunda nota: ");
-		n2 = leitor.nextDouble();
-		System.out.println();
+    System.out.print("Informe a altura: ");
+    altura = leitor.nextDouble();
+    System.out.println();
 
-		System.out.print("Informe a terceira nota: ");
-		n3 = leitor.nextDouble();
-		System.out.println();
-
-		System.out.print("Informe a quarta nota: ");
-		n4 = leitor.nextDouble();
-		System.out.println();
-
-		media = (n1 + n2 + n3 + n4) / 4;
-		if (media >= 7) {
-			System.out.println("Aprovado");
-		} else if (media > 5) {
-			System.out.println("Recuperacao");			
-		} else {
-			System.out.println("Reprovado");
-		}
-	}
+    imc = peso / (altura * altura);
+    if (imc < 18.5) {
+      System.out.println("Abaixo do peso");
+    } else if (imc <= 24.9) {
+      System.out.println("Peso normal");
+    } else if (imc <= 29.9) {
+      System.out.println("Sobrepeso");
+    } else if (imc <= 34.9) {
+      System.out.println("Obesidade de grau I");
+    } else if (imc <= 39.9) {
+      System.out.println("Obesidade de grau II");
+    }
+  }
 }
